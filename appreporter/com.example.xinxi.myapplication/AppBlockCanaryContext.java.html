@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AppBlockCanaryContext.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoCo Coverage Report</a> &gt; <a href="index.source.html" class="el_package">com.example.xinxi.myapplication</a> &gt; <span class="el_source">AppBlockCanaryContext.java</span></div><h1>AppBlockCanaryContext.java</h1><pre class="source lang-java linenums">//package com.example.xinxi.myapplication;
+//
+//import android.content.Context;
+//
+//import com.github.moduth.blockcanary.BlockCanaryContext;
+//import com.github.moduth.blockcanary.internal.BlockInfo;
+//
+//import java.io.File;
+//import java.util.LinkedList;
+//import java.util.List;
+//
+///**
+// * Created by xinxi on 2018/4/22.
+// */
+//
+<span class="nc" id="L16">//public class AppBlockCanaryContext  extends BlockCanaryContext {</span>
+//    /**
+//     * Implement in your project.
+//     *
+//     * @return Qualifier which can specify this installation, like version + flavor.
+//     */
+//    public String provideQualifier() {
+<span class="nc" id="L23">//        return &quot;unknown&quot;;</span>
+//    }
+//
+//    /**
+//     * Implement in your project.
+//     *
+//     * @return user id
+//     */
+//    public String provideUid() {
+<span class="nc" id="L32">//        return &quot;uid&quot;;</span>
+//    }
+//
+//    /**
+//     * Network type
+//     *
+//     * @return {@link String} like 2G, 3G, 4G, wifi, etc.
+//     */
+//    public String provideNetworkType() {
+<span class="nc" id="L41">//        return &quot;unknown&quot;;</span>
+//    }
+//
+//    /**
+//     * Config monitor duration, after this time BlockCanary will stop, use
+//     * with {@code BlockCanary}'s isMonitorDurationEnd
+//     *
+//     * @return monitor last duration (in hour)
+//     */
+//    public int provideMonitorDuration() {
+<span class="nc" id="L51">//        return -1;</span>
+//    }
+//
+//    /**
+//     * Config block threshold (in millis), dispatch over this duration is regarded as a BLOCK. You may set it
+//     * from performance of device.
+//     *
+//     * @return threshold in mills
+//     */
+//    public int provideBlockThreshold() {
+<span class="nc" id="L61">//        return 10;</span>
+//    }
+//
+//    /**
+//     * Thread stack dump interval, use when block happens, BlockCanary will dump on main thread
+//     * stack according to current sample cycle.
+//     * &lt;p&gt;
+//     * Because the implementation mechanism of Looper, real dump interval would be longer than
+//     * the period specified here (especially when cpu is busier).
+//     * &lt;/p&gt;
+//     *
+//     * @return dump interval (in millis)
+//     */
+//    public int provideDumpInterval() {
+<span class="nc" id="L75">//        return provideBlockThreshold();</span>
+//    }
+//
+//    /**
+//     * Path to save log, like &quot;/blockcanary/&quot;, will save to sdcard if can.
+//     *
+//     * @return path of log files
+//     */
+//    public String providePath() {
+<span class="nc" id="L84">//        return &quot;/blockcanary/&quot;;</span>
+//    }
+//
+//    /**
+//     * If need notification to notice block.
+//     *
+//     * @return true if need, else if not need.
+//     */
+//    public boolean displayNotification() {
+<span class="nc" id="L93">//        return true;</span>
+//    }
+//
+//    /**
+//     * Implement in your project, bundle files into a zip file.
+//     *
+//     * @param src  files before compress
+//     * @param dest files compressed
+//     * @return true if compression is successful
+//     */
+//    public boolean zip(File[] src, File dest) {
+<span class="nc" id="L104">//        return false;</span>
+//    }
+//
+//    /**
+//     * Implement in your project, bundled log files.
+//     *
+//     * @param zippedFile zipped file
+//     */
+//    public void upload(File zippedFile) {
+<span class="nc" id="L113">//        throw new UnsupportedOperationException();</span>
+//    }
+//
+//
+//    /**
+//     * Packages that developer concern, by default it uses process name,
+//     * put high priority one in pre-order.
+//     *
+//     * @return null if simply concern only package with process name.
+//     */
+//    public List&lt;String&gt; concernPackages() {
+<span class="nc" id="L124">//        return null;</span>
+//    }
+//
+//    /**
+//     * Filter stack without any in concern package, used with @{code concernPackages}.
+//     *
+//     * @return true if filter, false it not.
+//     */
+//    public boolean filterNonConcernStack() {
+<span class="nc" id="L133">//        return false;</span>
+//    }
+//
+//    /**
+//     * Provide white list, entry in white list will not be shown in ui list.
+//     *
+//     * @return return null if you don't need white-list filter.
+//     */
+//    public List&lt;String&gt; provideWhiteList() {
+<span class="nc" id="L142">//        LinkedList&lt;String&gt; whiteList = new LinkedList&lt;&gt;();</span>
+<span class="nc" id="L143">//        whiteList.add(&quot;org.chromium&quot;);</span>
+<span class="nc" id="L144">//        return whiteList;</span>
+//    }
+//
+//    /**
+//     * Whether to delete files whose stack is in white list, used with white-list.
+//     *
+//     * @return true if delete, false it not.
+//     */
+//    public boolean deleteFilesInWhiteList() {
+<span class="nc" id="L153">//        return true;</span>
+//    }
+//
+//    /**
+//     * Block interceptor, developer may provide their own actions.
+//     */
+//    public void onBlock(Context context, BlockInfo blockInfo) {
+//
+<span class="nc" id="L161">//    }</span>
+//
+//
+//}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201802231233</span></div></body></html>

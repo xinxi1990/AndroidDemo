@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Utils.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoCo Coverage Report</a> &gt; <a href="index.source.html" class="el_package">com.example.xinxi.myapplication</a> &gt; <span class="el_source">Utils.java</span></div><h1>Utils.java</h1><pre class="source lang-java linenums">package com.example.xinxi.myapplication;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.FileOutputStream;
+import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.content.Context;
+import android.util.Log;
+import android.widget.Toast;
+import android.os.Environment;
+import java.util.Date;
+import java.text.SimpleDateFormat;
+
+
+/**
+ * Created by xinxi on 2018/4/23.
+ */
+
+<span class="nc" id="L20">public class Utils {</span>
+
+    /* 将文件数据写入sdcard中，保存数据 */
+    public void writeDataToSD(String text) {
+        try {
+<span class="nc" id="L25">            Log.d(&quot;writeDataToSD&quot;,&quot;go to&quot;);</span>
+            /* 获取File对象，确定数据文件的信息 */
+<span class="nc" id="L27">            File file  = new File(Environment.getExternalStorageDirectory()+&quot;/battery.txt&quot;);</span>
+
+            /* 判断sd的外部设置状态是否可以读写 */
+<span class="nc bnc" id="L30" title="All 2 branches missed.">            if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {</span>
+
+                 /* 流的对象 *//*  */
+<span class="nc" id="L33">                FileOutputStream fos = new FileOutputStream(file,true);</span>
+
+                /* 需要写入的数据 */
+<span class="nc" id="L36">                SimpleDateFormat df = new SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;);//设置日期格式</span>
+<span class="nc" id="L37">                System.out.println(df.format(new Date()));// new Date()为获取当前系统时间</span>
+<span class="nc" id="L38">                String message =df.format(new Date())+&quot; , &quot;+text + &quot;\n&quot;;</span>
+
+                 /* 将字符串转换成字节数组 */
+<span class="nc" id="L41">                byte[] buffer = message.getBytes();</span>
+
+                 /* 开始写入数据 */
+<span class="nc" id="L44">                fos.write(buffer);</span>
+
+                /* 关闭流的使用 */
+<span class="nc" id="L47">                fos.close();</span>
+                //Toast.makeText(activity, &quot;文件写入成功&quot;, Toast.LENGTH_LONG).show();
+<span class="nc" id="L49">                Log.d(&quot;writeDataToSD&quot;,&quot;sucess&quot;);</span>
+            }
+
+<span class="nc" id="L52">        } catch (Exception e) {</span>
+<span class="nc" id="L53">            Log.d(&quot;writeDataToSD&quot;,&quot;fail: &quot; + e);</span>
+            //Toast.makeText(activity, &quot;文件写入失败&quot;, Toast.LENGTH_LONG).show();
+<span class="nc" id="L55">        }</span>
+<span class="nc" id="L56">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201802231233</span></div></body></html>

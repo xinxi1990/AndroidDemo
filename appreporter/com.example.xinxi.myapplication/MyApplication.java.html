@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MyApplication.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoCo Coverage Report</a> &gt; <a href="index.source.html" class="el_package">com.example.xinxi.myapplication</a> &gt; <span class="el_source">MyApplication.java</span></div><h1>MyApplication.java</h1><pre class="source lang-java linenums">package com.example.xinxi.myapplication;
+
+import android.app.Activity;
+import android.app.Application;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.database.Observable;
+import android.support.v4.util.ArrayMap;
+import android.util.Log;
+import android.widget.TextView;
+//
+//import com.github.moduth.blockcanary.BlockCanary;
+//import com.squareup.leakcanary.AndroidExcludedRefs;
+//import com.squareup.leakcanary.LeakCanary;
+//import com.squareup.leakcanary.RefWatcher;
+//import com.squareup.leakcanary.internal.DisplayLeakActivity;
+//import com.squareup.leakcanary.internal.LeakCanaryInternals;
+//import com.tencent.wstt.gt.GTRLog;
+//import com.tencent.wstt.gt.controller.GTRController;
+
+import java.util.Map;
+
+//import cn.hikyson.android.godeye.toolbox.crash.CrashFileProvider;
+//import cn.hikyson.android.godeye.toolbox.rxpermission.RxPermissions;
+//import cn.hikyson.godeye.core.GodEye;
+//import cn.hikyson.godeye.core.helper.PermissionRequest;
+//import cn.hikyson.godeye.core.internal.modules.battery.Battery;
+//import cn.hikyson.godeye.core.internal.modules.battery.BatteryContextImpl;
+//import cn.hikyson.godeye.core.internal.modules.cpu.Cpu;
+//import cn.hikyson.godeye.core.internal.modules.cpu.CpuContextImpl;
+//import cn.hikyson.godeye.core.internal.modules.crash.Crash;
+//import cn.hikyson.godeye.core.internal.modules.fps.Fps;
+//import cn.hikyson.godeye.core.internal.modules.fps.FpsContextImpl;
+//import cn.hikyson.godeye.core.internal.modules.leakdetector.LeakContextImpl2;
+//import cn.hikyson.godeye.core.internal.modules.leakdetector.LeakDetector;
+//import cn.hikyson.godeye.core.internal.modules.memory.Heap;
+//import cn.hikyson.godeye.core.internal.modules.memory.Pss;
+//import cn.hikyson.godeye.core.internal.modules.memory.PssContextImpl;
+//import cn.hikyson.godeye.core.internal.modules.memory.Ram;
+//import cn.hikyson.godeye.core.internal.modules.memory.RamContextImpl;
+//import cn.hikyson.godeye.core.internal.modules.pageload.Pageload;
+//import cn.hikyson.godeye.core.internal.modules.pageload.PageloadContextImpl;
+//import cn.hikyson.godeye.core.internal.modules.sm.Sm;
+//import cn.hikyson.godeye.core.internal.modules.sm.SmContextImpl;
+//import cn.hikyson.godeye.core.internal.modules.thread.ThreadContextImpl;
+//import cn.hikyson.godeye.core.internal.modules.thread.ThreadDump;
+//import cn.hikyson.godeye.core.internal.modules.thread.deadlock.DeadLock;
+//import cn.hikyson.godeye.core.internal.modules.thread.deadlock.DeadLockContextImpl;
+//import cn.hikyson.godeye.core.internal.modules.thread.deadlock.DeadlockDefaultThreadFilter;
+//import cn.hikyson.godeye.core.internal.modules.traffic.Traffic;
+//import cn.hikyson.godeye.core.internal.modules.traffic.TrafficContextImpl;
+//import cn.hikyson.godeye.monitor.GodEyeMonitor;
+
+import okhttp3.OkHttpClient;
+//import com.readystatesoftware.chuck.ChuckInterceptor;
+
+/**
+ * Created by xinxi on 2018/3/30.
+ */
+
+<span class="nc" id="L63">public class MyApplication extends Application {</span>
+
+<span class="nc" id="L65">    String TAG = &quot;MyApplication&quot;;</span>
+<span class="nc" id="L66">    String ip = &quot;&quot;;</span>
+
+//    private RefWatcher refWatcher;
+//    protected RefWatcher installLeakCanary(){
+<span class="nc" id="L70">//        Log.d(TAG,&quot;RefWatcher: LeakCanary&quot;);</span>
+<span class="nc" id="L71">//        return LeakCanary.install(this);</span>
+//    }
+
+    private static Context context;
+    @Override
+    public void onCreate() {
+<span class="nc" id="L77">        super.onCreate();</span>
+<span class="nc" id="L78">        context = getApplicationContext();</span>
+        // 安装LeakCanary
+<span class="nc" id="L80">//        refWatcher = installLeakCanary();</span>
+<span class="nc" id="L81">//        LeakCanaryInternals.setEnabled(this, DisplayLeakActivity.class, true);//true展示 false不展示</span>
+<span class="nc" id="L82">//        Log.d(TAG, &quot;onCreate: LeakCanary&quot;);</span>
+
+
+<span class="nc" id="L85">//        OkHttpClient client = new OkHttpClient.Builder()</span>
+<span class="nc" id="L86">//                .addInterceptor(new ChuckInterceptor(context))</span>
+<span class="nc" id="L87">//                .build();</span>
+//
+<span class="nc" id="L89">//        GTRLog.isOpen = true;</span>
+<span class="nc" id="L90">//        GTRController.init(getApplicationContext());</span>
+//
+<span class="nc" id="L92">//        BlockCanary.install(this, new AppBlockCanaryContext()).start();</span>
+//
+<span class="nc" id="L94">//        GodEyeMonitor.injectAppInfoConext(</span>
+<span class="nc" id="L95">//                new GodEyeMonitor.AppInfoConext() {</span>
+//            @Override
+//            public Context getContext() {
+//
+<span class="nc" id="L99">//                return MyApplication.this;</span>
+//            }
+//
+//            @Override
+//            public Map&lt;String, Object&gt; getAppInfo() {
+<span class="nc" id="L104">//                Map&lt;String, Object&gt; appInfo = new ArrayMap&lt;&gt;();</span>
+<span class="nc" id="L105">//                appInfo.put(&quot;ApplicationID&quot;, BuildConfig.APPLICATION_ID);</span>
+<span class="nc" id="L106">//                appInfo.put(&quot;VersionName&quot;, BuildConfig.VERSION_NAME);</span>
+<span class="nc" id="L107">//                appInfo.put(&quot;VersionCode&quot;, BuildConfig.VERSION_CODE);</span>
+<span class="nc" id="L108">//                appInfo.put(&quot;BuildType&quot;, BuildConfig.BUILD_TYPE);</span>
+<span class="nc" id="L109">//                return appInfo;</span>
+//            }
+//        });
+<span class="nc" id="L112">//        GodEye.instance().install(Cpu.class, new CpuContextImpl())</span>
+<span class="nc" id="L113">//                .install(Battery.class, new BatteryContextImpl(this))</span>
+<span class="nc" id="L114">//                .install(Fps.class, new FpsContextImpl(this))</span>
+<span class="nc" id="L115">//                .install(Heap.class, Long.valueOf(2000))</span>
+<span class="nc" id="L116">//                .install(Pss.class, new PssContextImpl(this))</span>
+<span class="nc" id="L117">//                .install(Ram.class, new RamContextImpl(this))</span>
+<span class="nc" id="L118">//                .install(Sm.class, new SmContextImpl(this, 1000, 300, 800))</span>
+<span class="nc" id="L119">//                .install(Traffic.class, new TrafficContextImpl())</span>
+<span class="nc" id="L120">//                .install(Crash.class, new CrashFileProvider(this))</span>
+<span class="nc" id="L121">//                .install(ThreadDump.class, new ThreadContextImpl())</span>
+<span class="nc" id="L122">//                .install(DeadLock.class, new DeadLockContextImpl(GodEye.instance().getModule(ThreadDump.class).subject(), new DeadlockDefaultThreadFilter()))</span>
+<span class="nc" id="L123">//                .install(Pageload.class, new PageloadContextImpl(this))</span>
+<span class="nc" id="L124">//                .install(LeakDetector.class, new LeakContextImpl2(this, new PermissionRequest() {</span>
+//                    @Override
+//                    public io.reactivex.Observable&lt;Boolean&gt; dispatchRequest(Activity activity, String... permissions) {
+<span class="nc" id="L127">//                        return new RxPermissions(activity).request(permissions);</span>
+//                    }
+//                }));
+//
+<span class="nc" id="L131">//        GodEyeMonitor.work(context);</span>
+
+<span class="nc" id="L133">        GetWifi getWifi = new GetWifi();</span>
+<span class="nc" id="L134">        ip = getWifi.getWIFILocalIpAdress(context);</span>
+        //获取wifi地址
+<span class="nc" id="L136">        Log.d(TAG,&quot;ip地址是&quot; + ip);</span>
+
+        new SystemUtil().showSystemParameter();
+<span class="nc" id="L139"></span>
+
+    }
+<span class="nc" id="L142">}</span>
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201802231233</span></div></body></html>

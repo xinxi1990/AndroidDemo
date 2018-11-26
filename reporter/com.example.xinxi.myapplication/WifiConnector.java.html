@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>WifiConnector.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoCo Coverage Report</a> &gt; <a href="index.source.html" class="el_package">com.example.xinxi.myapplication</a> &gt; <span class="el_source">WifiConnector.java</span></div><h1>WifiConnector.java</h1><pre class="source lang-java linenums">package com.example.xinxi.myapplication;
+
+import java.util.List;
+
+import android.net.wifi.*;
+import android.net.wifi.WifiConfiguration.AuthAlgorithm;
+import android.net.wifi.WifiConfiguration.KeyMgmt;
+import android.os.Handler;
+import android.os.Message;
+import android.text.TextUtils;
+import android.util.Log;
+
+public class WifiConnector {
+    Handler mHandler;
+    WifiManager wifiManager;
+
+    /**
+     * 向UI发送消息
+     * @param info 消息
+     */
+    public void sendMsg(String info) {
+<span class="nc bnc" id="L22" title="All 2 branches missed.">        if (mHandler != null) {</span>
+<span class="nc" id="L23">            Message msg = new Message();</span>
+<span class="nc" id="L24">            msg.obj = info;</span>
+<span class="nc" id="L25">            mHandler.sendMessage(msg);// 向Handler发送消息</span>
+<span class="nc" id="L26">        } else {</span>
+<span class="nc" id="L27">            Log.e(&quot;wifi&quot;, info);</span>
+        }
+<span class="nc" id="L29">    }</span>
+
+    //WIFICIPHER_WEP是WEP ，WIFICIPHER_WPA是WPA，WIFICIPHER_NOPASS没有密码
+<span class="nc" id="L32">    public enum WifiCipherType {</span>
+<span class="nc" id="L33">        WIFICIPHER_WEP, WIFICIPHER_WPA, WIFICIPHER_NOPASS, WIFICIPHER_INVALID</span>
+    }
+
+    // 构造函数
+<span class="nc" id="L37">    public WifiConnector(WifiManager wifiManager) {</span>
+<span class="nc" id="L38">        this.wifiManager = wifiManager;</span>
+<span class="nc" id="L39">    }</span>
+
+    // 提供一个外部接口，传入要连接的无线网
+    public void connect(String ssid, String password, WifiCipherType type) {
+<span class="nc" id="L43">        Thread thread = new Thread(new ConnectRunnable(ssid, password, type));</span>
+<span class="nc" id="L44">        thread.start();</span>
+<span class="nc" id="L45">    }</span>
+
+    // 查看以前是否也配置过这个网络
+    private WifiConfiguration isExsits(String SSID) {
+<span class="nc" id="L49">        List&lt;WifiConfiguration&gt; existingConfigs = wifiManager</span>
+<span class="nc" id="L50">                .getConfiguredNetworks();</span>
+<span class="nc bnc" id="L51" title="All 2 branches missed.">        for (WifiConfiguration existingConfig : existingConfigs) {</span>
+<span class="nc bnc" id="L52" title="All 2 branches missed.">            if (existingConfig.SSID.equals(&quot;\&quot;&quot; + SSID + &quot;\&quot;&quot;)) {</span>
+<span class="nc" id="L53">                return existingConfig;</span>
+            }
+<span class="nc" id="L55">        }</span>
+<span class="nc" id="L56">        return null;</span>
+    }
+
+    private WifiConfiguration createWifiInfo(String SSID, String Password,
+                                             WifiCipherType Type) {
+<span class="nc" id="L61">        WifiConfiguration config = new WifiConfiguration();</span>
+<span class="nc" id="L62">        config.allowedAuthAlgorithms.clear();</span>
+<span class="nc" id="L63">        config.allowedGroupCiphers.clear();</span>
+<span class="nc" id="L64">        config.allowedKeyManagement.clear();</span>
+<span class="nc" id="L65">        config.allowedPairwiseCiphers.clear();</span>
+<span class="nc" id="L66">        config.allowedProtocols.clear();</span>
+<span class="nc" id="L67">        config.SSID = &quot;\&quot;&quot; + SSID + &quot;\&quot;&quot;;</span>
+        // nopass
+<span class="nc bnc" id="L69" title="All 2 branches missed.">        if (Type == WifiCipherType.WIFICIPHER_NOPASS) {</span>
+<span class="nc" id="L70">            config.allowedKeyManagement.set(WifiConfiguration.KeyMgmt.NONE);</span>
+        }
+        // wep
+<span class="nc bnc" id="L73" title="All 2 branches missed.">        if (Type == WifiCipherType.WIFICIPHER_WEP) {</span>
+<span class="nc bnc" id="L74" title="All 2 branches missed.">            if (!TextUtils.isEmpty(Password)) {</span>
+<span class="nc bnc" id="L75" title="All 2 branches missed.">                if (isHexWepKey(Password)) {</span>
+<span class="nc" id="L76">                    config.wepKeys[0] = Password;</span>
+                } else {
+<span class="nc" id="L78">                    config.wepKeys[0] = &quot;\&quot;&quot; + Password + &quot;\&quot;&quot;;</span>
+                }
+            }
+<span class="nc" id="L81">            config.allowedAuthAlgorithms.set(AuthAlgorithm.OPEN);</span>
+<span class="nc" id="L82">            config.allowedAuthAlgorithms.set(AuthAlgorithm.SHARED);</span>
+<span class="nc" id="L83">            config.allowedKeyManagement.set(KeyMgmt.NONE);</span>
+<span class="nc" id="L84">            config.wepTxKeyIndex = 0;</span>
+        }
+        // wpa
+<span class="nc bnc" id="L87" title="All 2 branches missed.">        if (Type == WifiCipherType.WIFICIPHER_WPA) {</span>
+<span class="nc" id="L88">            config.preSharedKey = &quot;\&quot;&quot; + Password + &quot;\&quot;&quot;;</span>
+<span class="nc" id="L89">            config.hiddenSSID = true;</span>
+<span class="nc" id="L90">            config.allowedAuthAlgorithms</span>
+<span class="nc" id="L91">                    .set(WifiConfiguration.AuthAlgorithm.OPEN);</span>
+<span class="nc" id="L92">            config.allowedGroupCiphers.set(WifiConfiguration.GroupCipher.TKIP);</span>
+<span class="nc" id="L93">            config.allowedKeyManagement.set(WifiConfiguration.KeyMgmt.WPA_PSK);</span>
+<span class="nc" id="L94">            config.allowedPairwiseCiphers</span>
+<span class="nc" id="L95">                    .set(WifiConfiguration.PairwiseCipher.TKIP);</span>
+            // 此处需要修改否则不能自动重联
+            // config.allowedProtocols.set(WifiConfiguration.Protocol.WPA);
+<span class="nc" id="L98">            config.allowedGroupCiphers.set(WifiConfiguration.GroupCipher.CCMP);</span>
+<span class="nc" id="L99">            config.allowedPairwiseCiphers</span>
+<span class="nc" id="L100">                    .set(WifiConfiguration.PairwiseCipher.CCMP);</span>
+<span class="nc" id="L101">            config.status = WifiConfiguration.Status.ENABLED;</span>
+        }
+<span class="nc" id="L103">        return config;</span>
+    }
+
+    // 打开wifi功能
+    private boolean openWifi() {
+<span class="nc" id="L108">        boolean bRet = true;</span>
+<span class="nc bnc" id="L109" title="All 2 branches missed.">        if (!wifiManager.isWifiEnabled()) {</span>
+<span class="nc" id="L110">            bRet = wifiManager.setWifiEnabled(true);</span>
+        }
+<span class="nc" id="L112">        return bRet;</span>
+    }
+
+    class ConnectRunnable implements Runnable {
+        private String ssid;
+
+        private String password;
+
+        private WifiCipherType type;
+
+<span class="nc" id="L122">        public ConnectRunnable(String ssid, String password, WifiCipherType type) {</span>
+<span class="nc" id="L123">            this.ssid = ssid;</span>
+<span class="nc" id="L124">            this.password = password;</span>
+<span class="nc" id="L125">            this.type = type;</span>
+<span class="nc" id="L126">        }</span>
+
+        @Override
+        public void run() {
+            try {
+                // 打开wifi
+<span class="nc" id="L132">                openWifi();</span>
+<span class="nc" id="L133">                sendMsg(&quot;opened&quot;);</span>
+<span class="nc" id="L134">                Thread.sleep(200);</span>
+                // 开启wifi功能需要一段时间(我在手机上测试一般需要1-3秒左右)，所以要等到wifi
+                // 状态变成WIFI_STATE_ENABLED的时候才能执行下面的语句
+<span class="nc bnc" id="L137" title="All 2 branches missed.">                while (wifiManager.getWifiState() == WifiManager.WIFI_STATE_ENABLING) {</span>
+                    try {
+                        // 为了避免程序一直while循环，让它睡个100毫秒检测……
+<span class="nc" id="L140">                        Thread.sleep(100);</span>
+<span class="nc" id="L141">                    } catch (InterruptedException ie) {</span>
+<span class="nc" id="L142">                    }</span>
+                }
+
+<span class="nc" id="L145">                WifiConfiguration wifiConfig = createWifiInfo(ssid, password,</span>
+                        type);
+                //
+<span class="nc bnc" id="L148" title="All 2 branches missed.">                if (wifiConfig == null) {</span>
+<span class="nc" id="L149">                    sendMsg(&quot;wifiConfig is null!&quot;);</span>
+<span class="nc" id="L150">                    return;</span>
+                }
+
+<span class="nc" id="L153">                WifiConfiguration tempConfig = isExsits(ssid);</span>
+
+<span class="nc bnc" id="L155" title="All 2 branches missed.">                if (tempConfig != null) {</span>
+<span class="nc" id="L156">                    wifiManager.removeNetwork(tempConfig.networkId);</span>
+                }
+
+<span class="nc" id="L159">                int netID = wifiManager.addNetwork(wifiConfig);</span>
+<span class="nc" id="L160">                boolean enabled = wifiManager.enableNetwork(netID, true);</span>
+<span class="nc" id="L161">                sendMsg(&quot;enableNetwork status enable=&quot; + enabled);</span>
+<span class="nc" id="L162">                boolean connected = wifiManager.reconnect();</span>
+<span class="nc" id="L163">                sendMsg(&quot;enableNetwork connected=&quot; + connected);</span>
+<span class="nc" id="L164">                sendMsg(&quot;连接成功!&quot;);</span>
+<span class="nc" id="L165">            } catch (Exception e) {</span>
+                // TODO: handle exception
+<span class="nc" id="L167">                sendMsg(e.getMessage());</span>
+<span class="nc" id="L168">                e.printStackTrace();</span>
+<span class="nc" id="L169">            }</span>
+<span class="nc" id="L170">        }</span>
+    }
+
+    private static boolean isHexWepKey(String wepKey) {
+<span class="nc" id="L174">        final int len = wepKey.length();</span>
+
+        // WEP-40, WEP-104, and some vendors using 256-bit WEP (WEP-232?)
+<span class="nc bnc" id="L177" title="All 6 branches missed.">        if (len != 10 &amp;&amp; len != 26 &amp;&amp; len != 58) {</span>
+<span class="nc" id="L178">            return false;</span>
+        }
+
+<span class="nc" id="L181">        return isHex(wepKey);</span>
+    }
+
+    private static boolean isHex(String key) {
+<span class="nc bnc" id="L185" title="All 2 branches missed.">        for (int i = key.length() - 1; i &gt;= 0; i--) {</span>
+<span class="nc" id="L186">            final char c = key.charAt(i);</span>
+<span class="nc bnc" id="L187" title="All 12 branches missed.">            if (!(c &gt;= '0' &amp;&amp; c &lt;= '9' || c &gt;= 'A' &amp;&amp; c &lt;= 'F' || c &gt;= 'a'</span>
+                    &amp;&amp; c &lt;= 'f')) {
+<span class="nc" id="L189">                return false;</span>
+            }
+        }
+
+<span class="nc" id="L193">        return true;</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201802231233</span></div></body></html>

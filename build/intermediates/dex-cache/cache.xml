@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/leakcanary-watcher_68b5e4b0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="db2d7cb5fc2ff9bc6a8177cfa7a93f90a2887c4b">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/leakcanary-watcher_68b5e4b0_6af96fb0c20dd4e049eb1efd4ae46aa2da403a59/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/classes_dc434931.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="71820d2372863e0927d1affa23cf50594c91c6b1">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_dc434931_d9da06dc4d84865c71467965224a71ac1c021c3b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/gson-2.8.0_7f707169.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c4ba5371a29ac9b2ad6129b1d39ea38750043eff">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.8.0_7f707169_971c607ca53853021ce71d8f8891bb33f00505ea/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/classes_f19e1bc8.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3ad14b4c7c0c82b6834948f5e6a57fcf6cbb9788">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f19e1bc8_7185ccd358d2103d718135303d327214372e3eb7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/classes_fb1cf380.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2442771a5590dd4eb4bce00c2e9dca9e22e4c963">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fb1cf380_af8042fbac6761138805b267ccea536433822b59/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/classes_334f17be.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="508f50705b4fde51a16259f29c854201a3044516">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_334f17be_a1afae97860b7c64934b93e70ee9fb451869a157/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/classes_2bacb492.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="7efef32744ca4a436492d5cf28c08698cc2af256">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2bacb492_882c5d11ec7214d11c157ad6ed6aebe8b4706744/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/classes_2cc6084f.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="02980bdb137cba939b89c73457bc48a79fc727c3">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2cc6084f_7aaaa43cbc50933cefab25ec783858cd965d18a1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/classes_c2eb26bc.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="233f60a165ae622c8b36731502ebbda0f65e1930">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c2eb26bc_ee6502271cef54d25760adf85eab13758578e968/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/rxjava-2.1.0_625d92e9.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3959e94866dab082153cbcd7e159358c484e4471">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/rxjava-2.1.0_625d92e9_783b53839313e6f1dd3d5af7bd376eb7e41516d3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/classes_466b42f2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b1b301085b371364d1dfa698939eb8f6e9bb4d91">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_466b42f2_3d14c0955bd6974d07d92d9d272b634abf399a2f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/okio-1.12.0_00585a53.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3742beff8024d0a0073d284b7c5e4cbf73d99b25">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.12.0_00585a53_bf8497719e22adfada89b7e1d659bdccf87bda4e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/classes_12e527d5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="40392f30a601db5675cdf18192aab013d6fee6ec">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_12e527d5_7f552684dcba995662b79744c12d4a7f07bdd99f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/classes_91f679d1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_91f679d1_04bcc05aa5d585a715c8708955037cd9fdde8a8e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/classes_de05834f.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="88bf1af502857cf7a920140d5ae9a11b61e732e7">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_de05834f_6b8e4c40954032b7d17c61ec6c752fbe86637a68/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/leakcanary-analyzer-1.5_9c2b0677.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3277b0b0c2ace34a2edb5ddf9d1f67829561fb8f">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/leakcanary-analyzer-1.5_9c2b0677_43f7a43d078fb443ed2c96e12d1b46c8e3116344/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/common-1.0.0_36ea1c50.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a2d487452376193fc8c103dd2b9bd5f2b1b44563">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/common-1.0.0_36ea1c50_6304f5c230b709683a904cd21fb2d35f6080bcc9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/classes_b65530e0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b65530e0_ff90f8bb7a68c113a6a99f33fc22b6123011ec80/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/classes_81514b08.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f428e2fbc9ed0b297e3a3f420e51e6982f66822d">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_81514b08_61d459f3d72c8aac5f956daf35ddc6819bb5af9c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/classes_73a8139a.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_73a8139a_a9b3885889ed4d26dbd5c6f06ac79d9d995f89c7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/leakcanary-watcher-1.5_89f86fc1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="288101b16513158c2923ad3fb6161d1452b65e73">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/leakcanary-watcher-1.5_89f86fc1_bbb9976640279c9511e2bf49109c1383dd967fed/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/classes_2f5a491a.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b62fdc4cfef174c1e456014195c83fa7de7dc041">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2f5a491a_81921b0308dc91c15de64c38c971292740d5aaf3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/haha-2.0.3_d6029deb.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="640a438d2d415c056ca6a673ac26b183b044e160">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/haha-2.0.3_d6029deb_04d97a46138398b54adb11c9f7008c25af7f35df/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/constraint-layout-solver-1.0.2_9779c212.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_9779c212_4a2f6eb5717c7f40bc1c6fe2c103ee84444ebd93/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/classes_e6ea3c50.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="15b049fedbd8e3926bf99d9e45dfc9b2a1043bb9">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e6ea3c50_e3b8fe1d8aaabf3fad630648d0dd92e25ec45e04/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/classes_8687991d.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8687991d_1b1724a54a926b90f083932a0fbb6fbb7bc490f9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/classes_282dd253.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="527b23e5e288526ebda52e7e9bb84fe1eaeb55b6">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_282dd253_3c94492cc552feda1075170801c6ba41fba6349f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/fastjson-1.2.10_866122a4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="875e4b088224eace23dd9abbc354b058bab62f7a">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/fastjson-1.2.10_866122a4_23715998eaf5cda374c50bdedc590b75a7c0e3d6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/classes_a62ea9c3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="4119ea97a7191ff9b8f33b534ea220448f62f491">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a62ea9c3_a000b42a5376f79c6fba14597d362f39ec519d57/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/support-annotations-26.1.0_f1030f17.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="0814258103cf26a15fcc26ecce35f5b7d24b73f8">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-26.1.0_f1030f17_3e95ee55b03b86ad16c00ef3192d32a4327beb6a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/classes_0111ca30.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6f4138a4e065826cb044d49faea4cfd7191773d1">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0111ca30_7860ce00bbe079558033a59766f52f795fc279e8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/classes_2726182a.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="7620dc8ffe8d35b537d7948969a1df6c3a051e3d">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2726182a_71204747cab59889e65eb982c5ddb0b65d33d6b8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/classes_8d832853.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8d832853_cf397406dfca2c2d6510af3ceff35aa9aeea480c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/classes_6132d406.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f97cf85b0fe70d37a705111dafa6b1b418ea1650">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6132d406_da97c96ea8b0f052ddb92840b2b26498b32fc8f2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/okhttp-3.7.0_cac1cd6d.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6edbebdd8868708db718d15c09c4b28037fd487e">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.7.0_cac1cd6d_fdcd325a83149967f0b25d91258d727f1fbdf415/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/cupboard-2.2.0_0125a343.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="dc6f78fc951c5bdeec92c14c6dd6adc9ce6195d0">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/cupboard-2.2.0_0125a343_e6d793b3ea2863c3594d46059acbbc47a78e2c2d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/classes_4975af9d.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c39914f59e10c38a8f513e996e048d94d79e590f">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4975af9d_247abfef16f95cc716bd0161a9c0e5fe7d7db337/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/reactive-streams-1.0.0_af7d9957.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="14b8c877d98005ba3941c9257cfe09f6ed0e0d74">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/reactive-streams-1.0.0_af7d9957_74ead1cceb5753fd0463cdb912f6c754a3299191/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/HiBeaver/debug/jars/1/10/common-1.0.0_ff1e2f7a.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e414a4cb28434e25c4f6aa71426eb20cf4874ae9">
+        <dex dex="/Users/xinxi/AndroidStudioProjects/MyApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/common-1.0.0_ff1e2f7a_dd2b753e44e9cdbdcf61e645b2f3ae013b5c3d8a/classes.dex" />
+    </item>
+
+</items>

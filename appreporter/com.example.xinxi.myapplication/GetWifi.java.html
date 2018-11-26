@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>GetWifi.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoCo Coverage Report</a> &gt; <a href="index.source.html" class="el_package">com.example.xinxi.myapplication</a> &gt; <span class="el_source">GetWifi.java</span></div><h1>GetWifi.java</h1><pre class="source lang-java linenums">package com.example.xinxi.myapplication;
+
+import android.content.Context;
+import android.net.wifi.WifiInfo;
+import android.net.wifi.WifiManager;
+
+/**
+ * Created by xinxi on 2018/4/22.
+ */
+
+<span class="nc" id="L11">public class GetWifi {</span>
+
+    public static String getWIFILocalIpAdress(Context mContext) {
+        //获取wifi服务
+<span class="nc" id="L15">        WifiManager wifiManager = (WifiManager)mContext.getSystemService(Context.WIFI_SERVICE);</span>
+        //判断wifi是否开启
+<span class="nc bnc" id="L17" title="All 2 branches missed.">        if (!wifiManager.isWifiEnabled()) {</span>
+<span class="nc" id="L18">            wifiManager.setWifiEnabled(true);</span>
+        }
+<span class="nc" id="L20">        WifiInfo wifiInfo = wifiManager.getConnectionInfo();</span>
+<span class="nc" id="L21">        int ipAddress = wifiInfo.getIpAddress();</span>
+<span class="nc" id="L22">        String ip = formatIpAddress(ipAddress);</span>
+<span class="nc" id="L23">        return ip;</span>
+    }
+
+    private static String formatIpAddress(int ipAdress) {
+
+<span class="nc" id="L28">        return (ipAdress &amp; 0xFF ) + &quot;.&quot; +</span>
+                ((ipAdress &gt;&gt; 8 ) &amp; 0xFF) + &quot;.&quot; +
+                ((ipAdress &gt;&gt; 16 ) &amp; 0xFF) + &quot;.&quot; +
+                ( ipAdress &gt;&gt; 24 &amp; 0xFF) ;
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201802231233</span></div></body></html>

@@ -1,0 +1,149 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'hiBeaver'
+//import com.bryansharp.gradle.hibeaver.utils.MethodLogAdapter
+//import org.objectweb.asm.ClassVisitor
+//import org.objectweb.asm.MethodVisitor
+//import org.objectweb.asm.Opcodes
+apply plugin: 'jacoco'//添加插件jacoco
+
+
+jacoco{
+    toolVersion = "0.7.9"//声明jacoco的版本号
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'   // aar目录
+    }
+}
+
+
+//hiBeaver {
+//    modifyMatchMaps = [
+//            //类名称匹配规则，*表示任意长度任意字符，|为分隔符，可以理解为或
+//            '*Activity|*Receiver|*Service|!android*': [
+//                    //方法名匹配规则与类名类似，同时也支持正则表达式匹配（需要加r:）；adapter后为一个闭包，进行具体的修改
+//                    ['methodName': 'on**', 'methodDesc': null, 'adapter': {
+//                            //下面这些为闭包传入的参数，可以帮助我们进行方法过滤，以及根据方法参数来调整字节码修改方式
+//                        ClassVisitor cv, int access, String name, String desc, String signature, String[] exceptions ->
+//                            //这里我们有了ClassVisitor实例，其实可以为类添加新的方法。
+//                            MethodVisitor methodVisitor = cv.visitMethod(access, name, desc, signature, exceptions);
+//                            MethodVisitor adapter = new MethodLogAdapter(methodVisitor) {
+//
+//                                @Override
+//                                void visitCode() {
+//                                    super.visitCode();
+//                                    //实例对象入栈
+//                                    methodVisitor.visitVarInsn(Opcodes.ALOAD, 0);
+//                                    //下面两句我们将方法的名称和描述作为常量入栈
+//                                    methodVisitor.visitLdcInsn(name);
+//                                    methodVisitor.visitLdcInsn(desc);
+//                                    //调用我们的静态方法
+//                                    methodVisitor.visitMethodInsn(Opcodes.INVOKESTATIC,
+//                                            //下面这个MethodLogAdapter.className2Path(String)为
+//                                            // hibeaver插件提供的方法，可以将类名转为路径名
+//                                            MethodLogAdapter.className2Path("com.example.xinxi.myapplication.MonitorUtil"),
+//                                            "monitorThis", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V");
+//                                }
+//                            }
+//                            return adapter;
+//                    }]
+//            ]
+//    ]
+//}
+
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
+    defaultConfig {
+        applicationId "com.example.xinxi.myapplication"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.android.support:support-v4:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    //debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
+    //releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    //testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    //compile 'com.tencent.wstt.gt:gt-sdk:3.1.0'
+    //compile 'cn.hikyson.godeye:godeye-core:1.7.4'
+//    debugCompile 'cn.hikyson.godeye:godeye-monitor:1.7.4'
+    //releaseCompile 'cn.hikyson.godeye:godeye-monitor-no-op:1.7.4'
+    //compile 'cn.hikyson.godeye:godeye-toolbox:1.7.4'
+    compile 'com.android.support:multidex:1.0.1'
+    //compile 'com.github.markzhai:blockcanary-android:1.5.0'
+    androidTestCompile 'com.android.support.test.uiautomator:uiautomator-v18:2.1.2'
+    compile 'com.squareup.okhttp3:okhttp:3.7.0'
+    compile 'com.squareup.okio:okio:1.12.0'
+
+
+
+
+    //compile(name: 'android-godeye-monitor-debug', ext: 'aar')
+    //compile(name: 'fastjson-1.2.10', ext: 'jar')
+
+//    compile(name: 'android-godeye-monitor-no-op-debug', ext: 'aar')
+//    compile(name: 'android-godeye-toolbox-debug', ext: 'aar')
+
+
+}
+
+def coverageSourceDirs = [
+        '../app/src/main/java'
+]
+
+
+task jacocoTestReport(type: JacocoReport) {
+    group = "Reporting"
+    description = "Generate Jacoco coverage reports after running tests."
+    reports {
+        xml.enabled = true
+        html.enabled = true
+    }
+    def fileFilter = ['**/R*.class',
+                      '**/*$InjectAdapter.class',
+                      '**/*$ModuleAdapter.class',
+                      '**/*$ViewInjector*.class'
+    ]
+    def debugTree = fileTree(dir:"$buildDir/intermediates/classes/release", excludes: fileFilter)
+    def kotlinDebugTree = fileTree(dir:"$buildDir/tmp/kotlin-classes/release", excludes: fileFilter)
+
+    classDirectories = files([debugTree], [kotlinDebugTree])
+    sourceDirectories = files(coverageSourceDirs)
+//    executionData = files("$buildDir/outputs/code-coverage/connected/coverage.ec")
+    executionData = fileTree(dir:"$buildDir", includes: [
+            "outputs/code-coverage/connected/*coverage.ec"
+    ])
+
+    doFirst {
+        new File("$buildDir/intermediates/classes/").eachFileRecurse { file ->
+            if (file.name.contains('$$')) {
+                file.renameTo(file.path.replace('$$', '$'))
+            }
+        }
+    }
+}
