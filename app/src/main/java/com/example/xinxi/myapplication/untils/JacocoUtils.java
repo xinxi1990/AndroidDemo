@@ -1,4 +1,4 @@
-package com.example.xinxi.myapplication;
+package com.example.xinxi.myapplication.untils;
 
 import android.util.Log;
 
@@ -11,7 +11,7 @@ public class JacocoUtils {
     static String TAG = "JacocoUtils";
 
     //ec文件的路径
-    private static String DEFAULT_COVERAGE_FILE_PATH = "/sdcard/coverage.ec";
+    private static String DEFAULT_COVERAGE_FILE_PATH = "/sdcard/jacoco/coverage.ec";
 
     /**
      * 生成ec文件
@@ -39,7 +39,7 @@ public class JacocoUtils {
 
             out.write((byte[]) agent.getClass().getMethod("getExecutionData", boolean.class)
                     .invoke(agent, false));
-
+            Log.d(TAG,"写入" + DEFAULT_COVERAGE_FILE_PATH + "完成!" );
         } catch (Exception e) {
             Log.e(TAG, "generateEcFile: " + e.getMessage());
             Log.e(TAG,e.toString());

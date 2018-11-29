@@ -1,4 +1,4 @@
-package com.example.xinxi.myapplication;
+package com.example.xinxi.myapplication.info;
 
 import android.app.ActivityManager;
 import android.content.Context;

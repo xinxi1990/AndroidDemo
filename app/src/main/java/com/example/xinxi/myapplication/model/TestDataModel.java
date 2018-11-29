@@ -1,8 +1,6 @@
-package com.example.xinxi.myapplication;
+package com.example.xinxi.myapplication.model;
 
 import android.widget.TextView;
-
-import java.lang.ref.WeakReference;
 
 public class TestDataModel {
 

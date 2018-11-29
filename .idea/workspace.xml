@@ -6,7 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="JacocoUtils" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="写入崩溃文件地址" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
     <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
@@ -18,83 +18,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c49b0f40-970a-4227-8360-e4092705dd72" name="Default" comment="">
-      <change afterPath="$USER_HOME$/Documents/AndroidProject/jacco/app/src/main/java/com/weex/jasso/Test3Activity.java" afterDir="false" />
-      <change afterPath="$USER_HOME$/Documents/AndroidProject/jacco/app/src/main/java/com/weex/jasso/utils/JumpActivity.java" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/WebTest/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/WebTest/src/main/java/com/space/selenium/GetPer.java" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/WebTest/src/main/java/com/space/web/ViewController.java" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/WebTest/src/main/java/com/space/web/chromedriver" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/WebTest/timing.png" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/WebTest/webtest.jpg" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/.idea/iOSMonkey.iml" beforeDir="false" afterPath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/.idea/iOSMonkey.iml" afterDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/.idea/libraries/Maven__com_alibaba_fastjson_1_2_15.xml" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/.idea/workspace.xml" beforeDir="false" afterPath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/README.md" beforeDir="false" afterPath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/README.md" afterDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/config/config.yaml" beforeDir="false" afterPath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/config/config.yaml" afterDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/logs/iOSMonkey.log" beforeDir="false" afterPath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/logs/iOSMonkey.log" afterDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/pom.xml" beforeDir="false" afterPath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/pom.xml" afterDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/src/main/java/Driver/DriverServer.java" beforeDir="false" afterPath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/src/main/java/Driver/DriverServer.java" afterDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/src/main/java/Event/CaseEvent.java" beforeDir="false" afterPath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/src/main/java/Event/CaseEvent.java" afterDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/src/main/java/Log/appium.log" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/src/main/java/Monkey.java" beforeDir="false" afterPath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/src/main/java/Monkey.java" afterDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/src/main/java/ScreenShots/Screenshot.java" beforeDir="false" afterPath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/src/main/java/ScreenShots/Screenshot.java" afterDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/src/main/java/Untils/FileUntils.java" beforeDir="false" afterPath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/src/main/java/Untils/FileUntils.java" afterDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/606EC265-1ED8-454D-AF80-BEB78A417B55_output/iOSMonkey000.png" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/606EC265-1ED8-454D-AF80-BEB78A417B55_output/iOSMonkey001.png" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/606EC265-1ED8-454D-AF80-BEB78A417B55_output/iOSMonkey002.png" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/606EC265-1ED8-454D-AF80-BEB78A417B55_output/iOSMonkey003.png" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/606EC265-1ED8-454D-AF80-BEB78A417B55_output/iOSMonkey004.png" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/606EC265-1ED8-454D-AF80-BEB78A417B55_output/iOSMonkey005.png" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/606EC265-1ED8-454D-AF80-BEB78A417B55_output/iOSMonkey006.png" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/606EC265-1ED8-454D-AF80-BEB78A417B55_output/iOSMonkey007.png" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/606EC265-1ED8-454D-AF80-BEB78A417B55_output/iOSMonkey008.png" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/606EC265-1ED8-454D-AF80-BEB78A417B55_output/iOSMonkey009.png" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/606EC265-1ED8-454D-AF80-BEB78A417B55_output/iOSMonkey010.png" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/606EC265-1ED8-454D-AF80-BEB78A417B55_output/iOSMonkey011.png" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/606EC265-1ED8-454D-AF80-BEB78A417B55_output/iOSMonkey012.png" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/606EC265-1ED8-454D-AF80-BEB78A417B55_output/iOSMonkey013.png" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/606EC265-1ED8-454D-AF80-BEB78A417B55_output/iOSMonkey014.png" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/606EC265-1ED8-454D-AF80-BEB78A417B55_output/iOSMonkey015.png" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/classes/Driver/DriverServer.class" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/classes/Event/CaseEvent.class" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/classes/Event/FunctionEvent.class" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/classes/Event/MonkeyBackEvent.class" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/classes/Event/MonkeyDaemon.class" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/classes/Event/MonkeyEvent.class" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/classes/Event/MonkeyHomeKeyEvent.class" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/classes/Event/MonkeySpecialEvent.class" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/classes/Event/MonkeySubmitEvent.class" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/classes/Event/MonkeySwipeEvent.class" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/classes/Event/MonkeyTapEvent.class" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/classes/Event/MonkeyXpathEvent.class" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/classes/MathRandom.class" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/classes/Monkey.class" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/classes/ScreenShots/ModifyPic.class" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/classes/ScreenShots/Screenshot.class" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/classes/Test.class" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/classes/Untils/FileUntils.class" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/classes/Untils/GetPerformance.class" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/classes/Untils/MailConfig.class" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/classes/Untils/MyLogger.class" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/classes/Untils/SearchCrash.class" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/classes/Untils/SendMail$1.class" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/classes/Untils/SendMail.class" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/classes/log4j.properties" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/iOSMonkey-1.0.jar" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/logs/iOSMonkey.log" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/true/iOSMonkey.png" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/true/iOSMonkey000.png" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/true/iOSMonkey001.png" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/true/iOSMonkey002.png" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/true/iOSMonkey003.png" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/target/true/iOSMonkey004.png" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/testcase/testcase.yaml" beforeDir="false" afterPath="$USER_HOME$/Documents/ideaProjcet/iOSMonkey/testcase/testcase.yaml" afterDir="false" />
-      <change beforePath="$USER_HOME$/Documents/idea_Projcet/AppiumDemo/.idea/workspace.xml" beforeDir="false" afterPath="$USER_HOME$/Documents/idea_Projcet/AppiumDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$USER_HOME$/Documents/idea_Projcet/AppiumDemo/src/main/java/TestCase/Test_iOS.java" beforeDir="false" afterPath="$USER_HOME$/Documents/idea_Projcet/AppiumDemo/src/main/java/TestCase/Test_iOS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/example/xinxi/myapplication/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/example/xinxi/myapplication/ExampleInstrumentedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/example/xinxi/myapplication/WifiActivityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/example/xinxi/myapplication/WifiActivityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/activity/JumpActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/activity/JumpActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/activity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/activity/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/activity/TestActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/activity/TestActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/activity/WifiActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/activity/WifiActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/base/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/base/MyApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/block/BatteryReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/block/BatteryReceiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/broadcast/MyReceiverBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/broadcast/MyReceiverBack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/info/GetMeminfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/info/GetMeminfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/info/GetNetWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/info/GetNetWork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/info/GetWifi.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/info/GetWifi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/info/WifiConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/info/WifiConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/model/TestDataModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/model/TestDataModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/untils/JacocoUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/untils/JacocoUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/untils/MonitorUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/untils/MonitorUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/untils/SystemUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/untils/SystemUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/untils/UserStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/untils/UserStrings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/untils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/untils/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <ignored path="My Application.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -145,6 +92,20 @@
                 <item name="MyApplication" type="f1a62948:ProjectNode" />
                 <item name="MyApplication" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="android" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="MyApplication" type="f1a62948:ProjectNode" />
+                <item name="MyApplication" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="MyApplication" type="f1a62948:ProjectNode" />
+                <item name="MyApplication" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="reporting" type="c8890929:TasksNode$1" />
               </path>
             </expand>
@@ -160,10 +121,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="MyApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/MyApplication.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/base/MyApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="75" column="28" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
+            <state relative-caret-position="1121">
+              <caret line="77" column="53" selection-start-line="77" selection-start-column="53" selection-end-line="77" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -171,11 +132,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SystemUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/SystemUtil.java">
+      <file leaf-file-name="CrashHandler.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/untils/CrashHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1197">
-              <caret line="78" column="9" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="58" />
+            <state relative-caret-position="103">
+              <caret line="146" selection-start-line="146" selection-start-column="2" selection-end-line="172" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -183,62 +144,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/MainActivity.java">
+      <file leaf-file-name="FileTools.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/untils/FileTools.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3135">
-              <caret line="196" selection-start-line="196" selection-end-line="196" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JacocoUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/JacocoUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-316">
-              <caret line="10" column="36" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="101" selection-start-line="101" selection-end-line="101" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gradle.properties" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gradle.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/TestActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="2337">
+              <caret line="123" column="19" selection-start-line="123" selection-start-column="19" selection-end-line="123" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -256,10 +173,14 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>ThreadHand</find>
+      <find>lastStartedActivity</find>
+      <find>back</find>
+      <find>dump crash info failed</find>
+      <find>devices</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -461,6 +382,10 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="transformClassesWithJacocoForDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="processReleaseResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -572,6 +497,10 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="preJacocoTestReport" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="compileDebugAndroidTestNdk" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -589,6 +518,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="assembleDebugAndroidTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Creates test coverage reports for the debug variant." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="createDebugCoverageReport" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -1097,6 +1031,11 @@
                 <option name="name" value="transformResourcesWithMergeJavaResForDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Creates JaCoCo test coverage report from data gathered on the device." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="createDebugAndroidTestCoverageReport" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project and all projects that depend on it." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="buildDependents" />
@@ -1342,6 +1281,10 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="transformClassesWithJacocoForDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="processReleaseResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -1453,6 +1396,10 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="preJacocoTestReport" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="compileDebugAndroidTestNdk" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -1470,6 +1417,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="assembleDebugAndroidTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Creates test coverage reports for the debug variant." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="createDebugCoverageReport" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
@@ -1961,6 +1913,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="transformResourcesWithMergeJavaResForDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Creates JaCoCo test coverage report from data gathered on the device." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="createDebugAndroidTestCoverageReport" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project and all projects that depend on it." />
@@ -2564,8 +2521,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_jump.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/JumpActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_test.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/StartGT.java" />
@@ -2581,35 +2536,48 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/GetMeminfo.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/Utils.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/WifiAutoConnectManager.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_wifi.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/WifiConnector.java" />
         <option value="$PROJECT_DIR$/app/src/androidTest/java/com/example/xinxi/myapplication/ExampleInstrumentedTest.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/MyReceiver.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/MyReceiverBack.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/WifiActivity.java" />
         <option value="$PROJECT_DIR$/app/src/androidTest/java/com/example/xinxi/myapplication/WifiActivityTest.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/AddStr.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/MonitorUtil.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/Getimei.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/MobileInfoUtil.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/GetNetWork.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/SystemUtil.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/AppBlockCanaryContext.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/MyApplication.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/JacocoUtils.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/gradle.properties" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/JacocoUtils.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/MyApplication.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/WifiConnector.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/info/WifiConnector.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/MyReceiverBack.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/broadcast/MyReceiverBack.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/untils/Utils.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/activity/WifiActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/activity/TestActivity1.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/activity/TestActivity2.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/README.ME" />
+        <option value="$PROJECT_DIR$/jacoco.sh" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/activity/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/untils/JacocoUtils.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/jacoco.sh" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/base/MyApplication.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/untils/FileTools.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/untils/CrashHandler.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="1440" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -2617,6 +2585,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MyApplication" type="58d84e3e:PackageViewProjectNode" />
+              <item name="app" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -2637,18 +2616,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="MyApplication" type="58d84e3e:PackageViewProjectNode" />
-              <item name="app" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -2656,10 +2623,51 @@
               <item name="MyApplication" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyApplication" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
+            <path>
+              <item name="MyApplication" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyApplication" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyApplication" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyApplication" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyApplication" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyApplication" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyApplication" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyApplication" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyApplication" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyApplication" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="myapplication" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyApplication" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyApplication" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2672,21 +2680,26 @@
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="device.picker.selection" value="192.168.56.101:5555" />
+    <property name="device.picker.selection" value="5184b061" />
     <property name="last_opened_file_path" value="$USER_HOME$/Documents/simiasque" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="sync.plugin.last.upgrade.timestamp" value="1541301690825" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/block" />
+      <recent name="$PROJECT_DIR$/app/libs" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.xinxi.myapplication.untils" />
+      <recent name="com.example.xinxi.myapplication.activity" />
+      <recent name="com.example.xinxi.myapplication" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/libs" />
       <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.xinxi.myapplication" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/libs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -2701,7 +2714,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.MyApplication [jacocoTestReport]">
+  <component name="RunManager" selected="Android App.app">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -2771,100 +2784,59 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
     </configuration>
-    <configuration name="testwifi() (1)" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
-      <module name="app" />
-      <option name="TESTING_TYPE" value="3" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="android.support.test.runner.AndroidJUnitRunner" />
-      <option name="METHOD_NAME" value="testwifi" />
-      <option name="CLASS_NAME" value="com.example.xinxi.myapplication.WifiActivityTest" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="EXTRA_OPTIONS" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="DEBUGGER_TYPE" value="Auto" />
-      <Auto>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Auto>
-      <Hybrid>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Hybrid>
-      <Java />
-      <Native>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Native>
-      <Profilers>
-        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sampled (Java)" />
-      </Profilers>
-    </configuration>
-    <configuration name="testwifi()" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
-      <module name="app" />
-      <option name="TESTING_TYPE" value="3" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="android.support.test.runner.AndroidJUnitRunner" />
-      <option name="METHOD_NAME" value="testwifi" />
-      <option name="CLASS_NAME" value="com.example.xinxi.myapplication.ExampleInstrumentedTest" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="EXTRA_OPTIONS" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="DEBUGGER_TYPE" value="Auto" />
-      <Auto>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Auto>
-      <Hybrid>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Hybrid>
-      <Java />
-      <Native>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Native>
-      <Profilers>
-        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sampled (Java)" />
-      </Profilers>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="MyApplication [assembleDebug]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="assembleDebug" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+    </configuration>
+    <configuration name="MyApplication [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="assemble" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+    </configuration>
+    <configuration name="MyApplication [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
     </configuration>
     <configuration name="MyApplication [jacocoTestReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -2878,23 +2850,6 @@
         <option name="taskNames">
           <list>
             <option value="jacocoTestReport" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-    </configuration>
-    <configuration name="MyApplication:app [assembleAndroidTest]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="assembleAndroidTest" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -3002,17 +2957,19 @@
     </configuration>
     <list>
       <item itemvalue="Android App.app" />
-      <item itemvalue="Android Instrumented Tests.testwifi()" />
-      <item itemvalue="Android Instrumented Tests.testwifi() (1)" />
-      <item itemvalue="Gradle.MyApplication:app [assembleAndroidTest]" />
       <item itemvalue="Gradle.MyApplication:app [assembleDebug]" />
       <item itemvalue="Gradle.MyApplication [jacocoTestReport]" />
+      <item itemvalue="Gradle.MyApplication [assemble]" />
+      <item itemvalue="Gradle.MyApplication [assembleDebug]" />
+      <item itemvalue="Gradle.MyApplication [build]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MyApplication [build]" />
+        <item itemvalue="Gradle.MyApplication [assemble]" />
+        <item itemvalue="Gradle.MyApplication [assembleDebug]" />
         <item itemvalue="Gradle.MyApplication [jacocoTestReport]" />
         <item itemvalue="Gradle.MyApplication:app [assembleDebug]" />
-        <item itemvalue="Gradle.MyApplication:app [assembleAndroidTest]" />
       </list>
     </recent_temporary>
   </component>
@@ -3071,7 +3028,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" weight="0.48221344" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -3080,29 +3038,30 @@
       <window_info id="Build Variants" order="2" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.63376254" side_tool="true" weight="0.41666666" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28533685" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32628798" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49777448" visible="true" weight="0.48065174" />
-      <window_info anchor="bottom" id="Logcat" order="7" sideWeight="0.47329378" weight="0.48348746" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20211361" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3241895" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49777448" weight="0.5363276" />
+      <window_info anchor="bottom" id="Logcat" order="7" sideWeight="0.47329378" weight="0.29675812" />
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19542067" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.3662375" weight="0.3706721" />
-      <window_info anchor="right" id="Gradle" order="3" visible="true" weight="0.1171459" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1702432" />
+      <window_info active="true" anchor="bottom" id="Build" order="7" sideWeight="0.3662375" visible="true" weight="0.3042394" />
+      <window_info anchor="right" id="Gradle" order="3" visible="true" weight="0.07868383" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Assistant" order="4" visible="true" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Preview" order="4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3282123" />
     </layout>
     <layout-to-restore>
       <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49851632" weight="0.38076416" />
@@ -3120,7 +3079,6 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5022255" side_tool="true" weight="0.4756258" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Device File Explorer" order="4" side_tool="true" />
       <window_info anchor="right" id="Assistant" order="8" visible="true" />
       <window_info anchor="bottom" id="Logcat" order="10" sideWeight="0.47329378" weight="0.37417656" />
@@ -3134,6 +3092,7 @@
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
     </layout-to-restore>
   </component>
@@ -3176,188 +3135,11 @@
           <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="14" />
+      <option name="time" value="15" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/TestActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/SystemUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/AppBlockCanaryContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-26/android/telephony/TelephonyManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15200">
-          <caret line="800" selection-start-line="800" selection-end-line="800" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1558">
-          <caret line="85" column="4" selection-start-line="85" selection-start-column="4" selection-end-line="85" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/MyApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="87" column="38" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/JumpActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/TestActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/SystemUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/AppBlockCanaryContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-26/android/telephony/TelephonyManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15200">
-          <caret line="800" selection-start-line="800" selection-end-line="800" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1615">
-          <caret line="85" column="4" selection-start-line="85" selection-start-column="4" selection-end-line="85" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/MyApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="87" column="38" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/JumpActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/TestActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="85" column="4" selection-start-line="85" selection-start-column="4" selection-end-line="85" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-26/android/telephony/TelephonyManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12000">
-          <caret line="800" selection-start-line="800" selection-end-line="800" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/SystemUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/MyApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="87" column="38" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/JumpActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/TestActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="85" column="4" selection-start-line="85" selection-start-column="4" selection-end-line="85" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-26/android/telephony/TelephonyManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12000">
-          <caret line="800" selection-start-line="800" selection-end-line="800" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/SystemUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/MyApplication.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/base/MyApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1305">
           <caret line="87" column="38" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
@@ -3367,14 +3149,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/JumpActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/activity/JumpActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/TestActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/activity/TestActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
@@ -3395,7 +3177,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/SystemUtil.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/untils/SystemUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
           <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
@@ -3409,13 +3191,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/GetNetWork.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="58" column="11" lean-forward="true" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -3423,40 +3198,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android-godeye-monitor-debug/jars/classes.jar!/cn/hikyson/godeye/monitor/server/ThreadHand.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/MyReceiverBack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/android-godeye-monitor-debug/jars/classes.jar!/cn/hikyson/godeye/monitor/server/ThreadHand.class" />
     <entry file="file://$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-v26/values-v26.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/UserStrings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-76">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/TestActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_jump.xml">
-      <provider selected="true" editor-type-id="android-designer2">
+      <provider editor-type-id="text-editor">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
+      <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
@@ -3467,20 +3215,200 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/AppBlockCanaryContext.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/block/AppBlockCanaryContext.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="158" column="41" selection-start-line="158" selection-start-column="41" selection-end-line="158" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/MyApplication.java">
+    <entry file="file://$PROJECT_DIR$/gradle.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="75" column="28" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
+        <state relative-caret-position="342">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/block/BatteryReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/info/GetMeminfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/info/GetNetWork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/info/GetWifi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/untils/MonitorUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/untils/SystemUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/untils/UserStrings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/info/WifiConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/model/TestDataModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/broadcast/MyReceiverBack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_test.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1938">
+          <caret line="102" column="51" selection-start-line="102" selection-start-column="51" selection-end-line="102" selection-end-column="51" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/activity/WifiActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reporter/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reporter/jacoco-sessions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/activity/TestActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/activity/TestActivity1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/reports/jacoco/jacocoTestReport/html/jacoco-resources/sort.js" />
+    <entry file="file://$PROJECT_DIR$/app/build/reports/jacoco/jacocoTestReport/html/jacoco-resources/session.gif" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/activity/TestActivity2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/untils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="32" column="65" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/activity/JumpActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/jacoco.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="20" lean-forward="true" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/activity/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="235" column="15" selection-start-line="235" selection-start-column="15" selection-end-line="235" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.ME">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
@@ -3489,76 +3417,78 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="893">
-          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="49" />
+        <state relative-caret-position="365">
+          <caret line="33" column="73" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="73" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/JumpActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/untils/JacocoUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3135">
-          <caret line="196" selection-start-line="196" selection-end-line="196" />
+        <state relative-caret-position="19">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/SystemUtil.java">
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-26/android/os/Environment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1197">
-          <caret line="78" column="9" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/MonitorUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/JacocoUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-316">
-          <caret line="10" column="36" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="160">
+          <caret line="747" column="31" selection-start-line="747" selection-start-column="31" selection-end-line="747" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        <state relative-caret-position="2337">
+          <caret line="123" column="19" selection-start-line="123" selection-start-column="19" selection-end-line="123" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/base/MyApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="1121">
+          <caret line="77" column="53" selection-start-line="77" selection-start-column="53" selection-end-line="77" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gradle.properties">
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-26/java/lang/Throwable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+        <state relative-caret-position="190">
+          <caret line="711" column="16" selection-start-line="711" selection-start-column="16" selection-end-line="711" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-26/android/content/pm/PackageInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4992">
+          <caret line="114" column="33" lean-forward="true" selection-start-line="114" selection-start-column="33" selection-end-line="114" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/untils/FileTools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-26/android/os/Build.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9067">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/xinxi/myapplication/untils/CrashHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="146" selection-start-line="146" selection-start-column="2" selection-end-line="172" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

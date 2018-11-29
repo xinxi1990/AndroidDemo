@@ -1,8 +1,6 @@
-package com.example.xinxi.myapplication;
+package com.example.xinxi.myapplication.activity;
 
-import android.content.BroadcastReceiver;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -13,15 +11,13 @@ import android.os.Message;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.content.Context;
-import android.content.Intent;
-import android.util.Log;
-import android.widget.Toast;
-
-import com.example.xinxi.myapplication.WifiConnector.WifiCipherType;
+import com.example.xinxi.myapplication.R;
+import com.example.xinxi.myapplication.info.WifiConnector;
+import com.example.xinxi.myapplication.info.WifiConnector.WifiCipherType;
 
 
 public class WifiActivity  extends AppCompatActivity {
+
     String TAG = "WifiActivity ";
     Button btnConnect;
     WifiManager wifiManager;
@@ -31,7 +27,6 @@ public class WifiActivity  extends AppCompatActivity {
     EditText editSSID;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +34,7 @@ public class WifiActivity  extends AppCompatActivity {
 
         btnConnect = (Button) findViewById(R.id.btnConnect);
         textView1 = (TextView) findViewById(R.id.txtMessage);
-        wifiManager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
+        wifiManager = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
         wac = new WifiConnector(wifiManager);
 
         editPwd=(EditText) findViewById(R.id.editPwd);

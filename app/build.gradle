@@ -42,7 +42,7 @@ repositories {
 //                                    methodVisitor.visitMethodInsn(Opcodes.INVOKESTATIC,
 //                                            //下面这个MethodLogAdapter.className2Path(String)为
 //                                            // hibeaver插件提供的方法，可以将类名转为路径名
-//                                            MethodLogAdapter.className2Path("com.example.xinxi.myapplication.MonitorUtil"),
+//                                            MethodLogAdapter.className2Path("com.example.xinxi.myapplication.untils.MonitorUtil"),
 //                                            "monitorThis", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V");
 //                                }
 //                            }
@@ -64,11 +64,15 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
+
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+             testCoverageEnabled true
         }
     }
 
@@ -112,32 +116,41 @@ dependencies {
 
 }
 
-def coverageSourceDirs = [
-        '../app/src/main/java'
-]
+//def coverageSourceDirs = [
+//        '../app/src/main/java'
+//]
+
+task preJacocoTestReport(type: Exec) {
+    executable 'sh'
+    args "jacoco.sh"
+}
 
 
-task jacocoTestReport(type: JacocoReport) {
+task jacocoTestReport(type: JacocoReport,dependsOn: preJacocoTestReport) {
+
     group = "Reporting"
     description = "Generate Jacoco coverage reports after running tests."
     reports {
         xml.enabled = true
         html.enabled = true
     }
-    def fileFilter = ['**/R*.class',
-                      '**/*$InjectAdapter.class',
-                      '**/*$ModuleAdapter.class',
-                      '**/*$ViewInjector*.class'
-    ]
-    def debugTree = fileTree(dir:"$buildDir/intermediates/classes/release", excludes: fileFilter)
-    def kotlinDebugTree = fileTree(dir:"$buildDir/tmp/kotlin-classes/release", excludes: fileFilter)
 
-    classDirectories = files([debugTree], [kotlinDebugTree])
+
+    def coverageSourceDirs = [
+            '../app/src/main/java'
+    ]
+
+    def excludeClasses = ['**/R*.class',
+                          '**/*$InjectAdapter.class',
+                          '**/*$ModuleAdapter.class',
+                          '**/*$ViewInjector*.class',
+                          '**/BuildConfig.class'
+    ]
+
+    classDirectories = fileTree(dir: '../app/build/intermediates/classes/debug',excludes: excludeClasses)
+
     sourceDirectories = files(coverageSourceDirs)
-//    executionData = files("$buildDir/outputs/code-coverage/connected/coverage.ec")
-    executionData = fileTree(dir:"$buildDir", includes: [
-            "outputs/code-coverage/connected/*coverage.ec"
-    ])
+    executionData = files("$buildDir/outputs/code-coverage/connected/coverage.ec")
 
     doFirst {
         new File("$buildDir/intermediates/classes/").eachFileRecurse { file ->

@@ -1,4 +1,4 @@
-package com.example.xinxi.myapplication;
+package com.example.xinxi.myapplication.block;
 
 /**
  * Created by xinxi on 2018/4/24.
@@ -9,6 +9,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.BatteryManager;
 import android.util.Log;
+
+import com.example.xinxi.myapplication.untils.Utils;
 
 
 /**

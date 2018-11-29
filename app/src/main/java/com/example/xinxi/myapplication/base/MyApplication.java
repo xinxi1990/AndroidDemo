@@ -1,17 +1,10 @@
-package com.example.xinxi.myapplication;
+package com.example.xinxi.myapplication.base;
 
 import android.app.Activity;
 import android.app.Application;
-import android.content.BroadcastReceiver;
 import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
-import android.database.Observable;
 import android.os.Bundle;
-import android.support.v4.util.ArrayMap;
 import android.util.Log;
-import android.view.KeyEvent;
-import android.widget.TextView;
 //
 //import com.github.moduth.blockcanary.BlockCanary;
 //import com.squareup.leakcanary.AndroidExcludedRefs;
@@ -22,7 +15,10 @@ import android.widget.TextView;
 //import com.tencent.wstt.gt.GTRLog;
 //import com.tencent.wstt.gt.controller.GTRController;
 
-import java.util.Map;
+import com.example.xinxi.myapplication.info.GetWifi;
+import com.example.xinxi.myapplication.untils.CrashHandler;
+import com.example.xinxi.myapplication.untils.JacocoUtils;
+import com.example.xinxi.myapplication.untils.SystemUtil;
 
 //import cn.hikyson.android.godeye.toolbox.crash.CrashFileProvider;
 //import cn.hikyson.android.godeye.toolbox.rxpermission.RxPermissions;
@@ -55,9 +51,6 @@ import java.util.Map;
 //import cn.hikyson.godeye.core.internal.modules.traffic.TrafficContextImpl;
 //import cn.hikyson.godeye.monitor.GodEyeMonitor;
 
-import okhttp3.OkHttpClient;
-
-import static java.lang.System.exit;
 //import com.readystatesoftware.chuck.ChuckInterceptor;
 
 /**
@@ -82,6 +75,8 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
         context = getApplicationContext();
+        CrashHandler crashHandler = CrashHandler.getInstance();
+        crashHandler.init(this);
         // 安装LeakCanary
 //        refWatcher = installLeakCanary();
 //        LeakCanaryInternals.setEnabled(this, DisplayLeakActivity.class, true);//true展示 false不展示
@@ -146,6 +141,7 @@ public class MyApplication extends Application {
 
     }
 
+    //判断是否是后台
     @Override
     public void onTrimMemory(int level) {
         super.onTrimMemory(level);
@@ -173,7 +169,7 @@ public class MyApplication extends Application {
     public boolean isFromPushLaunch = false;//标记是否从 push 启动
 
 
-
+    // 使用ActivityLifecycleCallbacks可以监听每个页面的声明周期
     private Application.ActivityLifecycleCallbacks activityLifecycleCallbacks = new Application.ActivityLifecycleCallbacks() {
         private int compatStartCount = 0;
         private boolean isCompatForeground = false;//默认在后台
@@ -216,7 +212,6 @@ public class MyApplication extends Application {
                 onForegroundToBackground(activity);
             }
         }
-
 
         private void onForegroundToBackground(final Activity activity) {
             Log.d(TAG, "切到前台");

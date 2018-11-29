@@ -1,4 +1,4 @@
-package com.example.xinxi.myapplication;
+package com.example.xinxi.myapplication.activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +9,8 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.xinxi.myapplication.R;
 
 /**
  * Created by xinxi on 2018/3/29.

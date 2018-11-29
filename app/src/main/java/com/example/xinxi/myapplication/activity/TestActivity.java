@@ -1,8 +1,11 @@
-package com.example.xinxi.myapplication;
+package com.example.xinxi.myapplication.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.example.xinxi.myapplication.R;
+import com.example.xinxi.myapplication.model.TestDataModel;
 
 
 public class TestActivity extends Activity {

@@ -1,8 +1,5 @@
-package com.example.xinxi.myapplication;
+package com.example.xinxi.myapplication.untils;
 
-import android.app.Activity;
-import android.provider.Settings;
-import android.telephony.TelephonyManager;
 import android.util.Log;
 
 import java.util.Locale;

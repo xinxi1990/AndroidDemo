@@ -1,4 +1,4 @@
-package com.example.xinxi.myapplication;
+package com.example.xinxi.myapplication.info;
 
 public class GetNetWork {
 

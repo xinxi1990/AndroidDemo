@@ -1,4 +1,4 @@
-package com.example.xinxi.myapplication;
+package com.example.xinxi.myapplication.info;
 
 import java.util.List;
 
@@ -11,7 +11,7 @@ import android.text.TextUtils;
 import android.util.Log;
 
 public class WifiConnector {
-    Handler mHandler;
+    public Handler mHandler;
     WifiManager wifiManager;
 
     /**
@@ -172,12 +172,10 @@ public class WifiConnector {
 
     private static boolean isHexWepKey(String wepKey) {
         final int len = wepKey.length();
-
         // WEP-40, WEP-104, and some vendors using 256-bit WEP (WEP-232?)
         if (len != 10 && len != 26 && len != 58) {
             return false;
         }
-
         return isHex(wepKey);
     }
 
@@ -189,7 +187,6 @@ public class WifiConnector {
                 return false;
             }
         }
-
         return true;
     }
 

@@ -45,7 +45,7 @@ public class WifiActivityTest{
         Intent launchIntent = new Intent();
         launchIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
-        launchIntent.setComponent(new ComponentName("com.example.xinxi.myapplication", "com.example.xinxi.myapplication.WifiActivity"));
+        launchIntent.setComponent(new ComponentName("com.example.xinxi.myapplication", "com.example.xinxi.myapplication.activity.WifiActivity"));
         context.startActivity(launchIntent);
     }
 

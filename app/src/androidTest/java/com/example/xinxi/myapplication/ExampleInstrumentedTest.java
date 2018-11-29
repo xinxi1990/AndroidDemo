@@ -1,12 +1,12 @@
 package com.example.xinxi.myapplication;
 
 import android.support.v7.app.AppCompatActivity;
-import com.example.xinxi.myapplication.WifiConnector;
+import com.example.xinxi.myapplication.info.WifiConnector;
 import android.content.Context;
 import android.net.wifi.WifiManager;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.runner.AndroidJUnit4;
-import android.support.v7.app.AppCompatActivity;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import static org.junit.Assert.*;

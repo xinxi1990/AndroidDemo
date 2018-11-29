@@ -1,8 +1,6 @@
-package com.example.xinxi.myapplication;
+package com.example.xinxi.myapplication.activity;
 
-import android.app.Activity;
 import android.app.ActivityManager;
-import android.app.Application;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -12,9 +10,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.telephony.TelephonyManager;
 import android.util.Log;
-import android.webkit.WebView;
 import android.widget.*;
 import android.view.View.OnClickListener;
 import android.view.View;
@@ -28,17 +24,17 @@ import android.support.v7.widget.Toolbar;
 
 import static java.lang.Thread.sleep;
 
-import java.io.File;
-import java.lang.ref.WeakReference;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import android.os.SystemClock;
-import android.net.wifi.WifiManager;
+
+import com.example.xinxi.myapplication.R;
+import com.example.xinxi.myapplication.untils.JacocoUtils;
+import com.example.xinxi.myapplication.untils.UserStrings;
+import com.example.xinxi.myapplication.untils.Utils;
 
 
-
-public class MainActivity extends AppCompatActivity implements UserStrings{
+public class MainActivity extends AppCompatActivity implements UserStrings {
     private  static  MainActivity mainActivity;
     //静态mainActivity
 
@@ -150,6 +146,8 @@ public class MainActivity extends AppCompatActivity implements UserStrings{
         addListenerOnButton5();
 //        addListenerOnButton6();
         addListenerOnButton7();
+        addListenerOnButton8();
+        addListenerOnButton9();
 
         text = (TextView) findViewById(R.id.textView);
 
@@ -235,7 +233,7 @@ public class MainActivity extends AppCompatActivity implements UserStrings{
     public void onBackPressed() {
         super.onBackPressed();
         System.out.println("按下了back键   onBackPressed()");
-//        JacocoUtils.generateEcFile(true);
+        JacocoUtils.generateEcFile(true);
     }
 
 
@@ -378,6 +376,38 @@ public class MainActivity extends AppCompatActivity implements UserStrings{
                 //context = MainActivity.this;
                 mainActivity = MainActivity.this;
                 intent.setClass(mainActivity,WifiActivity.class);
+                startActivity(intent);
+            }
+
+        });
+    }
+
+
+    private void addListenerOnButton8() {
+        button1 = (Button)findViewById(R.id.button8);
+        button1.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d(TAG, "onClick8: ");
+                Intent intent = new Intent();
+                mainActivity = MainActivity.this;
+                intent.setClass(mainActivity,TestActivity1.class);
+                startActivity(intent);
+            }
+
+        });
+    }
+
+
+    private void addListenerOnButton9() {
+        button1 = (Button)findViewById(R.id.button9);
+        button1.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d(TAG, "onClick9: ");
+                Intent intent = new Intent();
+                mainActivity = MainActivity.this;
+                intent.setClass(mainActivity,TestActivity2.class);
                 startActivity(intent);
             }
 

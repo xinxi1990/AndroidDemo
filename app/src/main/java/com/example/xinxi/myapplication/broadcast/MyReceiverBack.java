@@ -1,4 +1,4 @@
-package com.example.xinxi.myapplication;
+package com.example.xinxi.myapplication.broadcast;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.net.wifi.WifiManager;
 import android.util.Log;
 import android.widget.Toast;
-
 import com.example.xinxi.myapplication.info.WifiConnector;
 
 /**
