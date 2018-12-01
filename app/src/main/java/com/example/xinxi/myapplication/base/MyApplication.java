@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.util.Log;
 //
 //import com.github.moduth.blockcanary.BlockCanary;
@@ -15,10 +16,15 @@ import android.util.Log;
 //import com.tencent.wstt.gt.GTRLog;
 //import com.tencent.wstt.gt.controller.GTRController;
 
+import com.example.xinxi.myapplication.blockscanner.AppBlockCanaryContext;
+import com.example.xinxi.myapplication.blockscanner.BlockConstans;
+import com.example.xinxi.myapplication.blockscanner.BlockThread;
 import com.example.xinxi.myapplication.info.GetWifi;
 import com.example.xinxi.myapplication.untils.CrashHandler;
 import com.example.xinxi.myapplication.untils.JacocoUtils;
 import com.example.xinxi.myapplication.untils.SystemUtil;
+import com.github.moduth.blockcanary.BlockCanary;
+import com.tencent.bugly.crashreport.CrashReport;
 
 //import cn.hikyson.android.godeye.toolbox.crash.CrashFileProvider;
 //import cn.hikyson.android.godeye.toolbox.rxpermission.RxPermissions;
@@ -59,16 +65,22 @@ import com.example.xinxi.myapplication.untils.SystemUtil;
 
 public class MyApplication extends Application {
 
+    private static MyApplication mAppCotext;
     String TAG = "MyApplication";
     String ip = "";
     private Activity lastStartedActivity = null;
     public boolean isBackground = false;//标记是否在后台
+    private static MyApplication mInstance = null;
 
 //    private RefWatcher refWatcher;
 //    protected RefWatcher installLeakCanary(){
 //        Log.d(TAG,"RefWatcher: LeakCanary");
 //        return LeakCanary.install(this);
 //    }
+
+    public static MyApplication getInstance() {
+        return mInstance;
+    }
 
     private static Context context;
     @Override
@@ -77,6 +89,10 @@ public class MyApplication extends Application {
         context = getApplicationContext();
         CrashHandler crashHandler = CrashHandler.getInstance();
         crashHandler.init(this);
+        CrashReport.initCrashReport(getApplicationContext(), "803eb6155d", false);
+
+        BlockCanary.install(this, new AppBlockCanaryContext()).start();
+
         // 安装LeakCanary
 //        refWatcher = installLeakCanary();
 //        LeakCanaryInternals.setEnabled(this, DisplayLeakActivity.class, true);//true展示 false不展示
@@ -160,7 +176,10 @@ public class MyApplication extends Application {
     private void notifyBackground() {
         // This is where you can notify listeners, handle session tracking, etc
         Log.d(TAG, "切到后台");
-        JacocoUtils.generateEcFile(true);
+        BlockThread blockThread = new BlockThread();
+        blockThread.scannerlog(blockThread.sdcardpath);
+        Log.d(TAG,"切到后台后,上报卡顿日志!");
+//        JacocoUtils.generateEcFile(true);
 
     }
 
@@ -220,6 +239,15 @@ public class MyApplication extends Application {
         }
     };
 
-
+    /**
+     * @return Application
+     * 曾试返回 BaseApplication 而非 Application，结果运行不起来
+     * 报libsupport.so里面的错
+     * 不知道为啥
+     */
+    @NonNull
+    public static Application getAppContext() {
+        return mAppCotext;
+    }
 
 }

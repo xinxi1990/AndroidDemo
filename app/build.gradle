@@ -5,7 +5,7 @@ apply plugin: 'com.android.application'
 //import org.objectweb.asm.MethodVisitor
 //import org.objectweb.asm.Opcodes
 apply plugin: 'jacoco'//添加插件jacoco
-
+//apply plugin: 'oneapm'
 
 jacoco{
     toolVersion = "0.7.9"//声明jacoco的版本号
@@ -16,6 +16,13 @@ repositories {
         dirs 'libs'   // aar目录
     }
 }
+
+//oneapm {
+//    defaultConfig {
+//        oneAPMAppKey 'b62e56b0-338d-4679-bbc2-6e31f5209967'
+//        startupPath 'http://miv2dc.oneapm.com'
+//    }
+//}
 
 
 //hiBeaver {
@@ -103,6 +110,9 @@ dependencies {
     androidTestCompile 'com.android.support.test.uiautomator:uiautomator-v18:2.1.2'
     compile 'com.squareup.okhttp3:okhttp:3.7.0'
     compile 'com.squareup.okio:okio:1.12.0'
+    compile 'com.tencent.bugly:crashreport:latest.release' //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.1.9
+//    compile 'com.tencent.bugly:nativecrashreport:latest.release'
+    implementation 'com.github.markzhai:blockcanary-android:1.5.0'
 
 
 

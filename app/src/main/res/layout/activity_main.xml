@@ -69,7 +69,7 @@
             android:id="@+id/button3"
             android:layout_width="96dp"
             android:layout_height="wrap_content"
-            android:text="jump"
+            android:text="Block"
             android:visibility="visible" />
 
         <Button

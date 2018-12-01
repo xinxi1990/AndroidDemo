@@ -1,5 +1,6 @@
 package com.example.xinxi.myapplication.activity;
 
+import android.Manifest;
 import android.app.ActivityManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -29,9 +30,13 @@ import java.util.List;
 import android.os.SystemClock;
 
 import com.example.xinxi.myapplication.R;
+import com.example.xinxi.myapplication.blockscanner.AppBlockCanaryContext;
+import com.example.xinxi.myapplication.blockscanner.BlockThread;
 import com.example.xinxi.myapplication.untils.JacocoUtils;
+import com.example.xinxi.myapplication.untils.PermissionsUtil;
 import com.example.xinxi.myapplication.untils.UserStrings;
 import com.example.xinxi.myapplication.untils.Utils;
+import com.github.moduth.blockcanary.BlockCanary;
 
 
 public class MainActivity extends AppCompatActivity implements UserStrings {
@@ -311,18 +316,17 @@ public class MainActivity extends AppCompatActivity implements UserStrings {
 
     private void addListenerOnButton3() {
         button1 = (Button)findViewById(R.id.button3);
-        button1.setOnClickListener(new OnClickListener() {
+        button2.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
                 Log.d(TAG, "onClick3: ");
-                Intent intent = new Intent();
-                //context = MainActivity.this;
-                mainActivity = MainActivity.this;
-                intent.setClass(mainActivity,JumpActivity.class);
-                //intent.setClass(context,JumpActivity.class);
-                startActivity(intent);
+                try {
+                    sleep(2000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                text.setText("Block测试");
             }
-
         });
 
     }
@@ -524,7 +528,13 @@ public class MainActivity extends AppCompatActivity implements UserStrings {
 //            //Toast.makeText(Test_Input_Output_Activity.this, getString(R.string.connect_gt), Toast.LENGTH_SHORT).show();
 //        }
 //    };
-
-
+//
+//    @NeedsPermission({Manifest.permission.READ_PHONE_STATE, Manifest.permission.WRITE_EXTERNAL_STORAGE})
+//    void initAfterPhonePermission() {
+//        Log.e(TAG, "initAfterPhonePermission");
+//        PermissionsUtil.getInstance().resetGotoSetting();
+//        BlockCanary.install(this, new AppBlockCanaryContext()).start();
+//        new BlockThread().start();
+//    }
 
 }
